@@ -9,87 +9,74 @@ import Hero from '../blocks/Hero';
 import Highlights from '../blocks/Highlights';
 import Notice from '../components/Notice';
 
-const LOREM = `
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book.
-`;
-
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>{"Global.product"}</title>
+        <title>AzideMakes - Unleashing the Maker in You</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Notice id="subscribed">Thank you for subscribing</Notice>
-      <Header id="top" title={"Global.product"} />
+      <Header id="top" title="AzideMakes" />
 
       <main>
         <Hero
-          title="Clear headline that explains your product’s benefit"
-          subtitle="Explain your unique solution, how it solves your customer's problem."
-          illustration=""
-          subscribePlaceholder="you@email.com"
-          subscribeAction="When is it ready?"
+          title="AzideMakes"
+          subtitle="Where 3D Printing Meets Open Source Magic!"
+          illustration="" // Consider adding a fun, techie illustration here
         />
 
         <Benefits
           background="alternate"
-          title="Headline that describes how your product solves the problem"
-          subtitle="Start by defining the pain your customer has right now, for example: clients not paying their invoices. Then write how your solution solves this problem for your customers."
+          subtitle='Ignite. Innovate. Inspire.'
+          title="The Magic of Making"
           benefits={[
-            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
-            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
-            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
+            { illustration: '', title: '3D Printing', text: 'Breathing life to ideas one layer at a time!' },
+            { illustration: '', title: 'Open Source Hardware', text: 'Open to all, limited by none. Dive into the vast ocean of open tech!' },
+            { illustration: '', title: 'Radio Frequency Tech', text: 'Where waves carry more than just sound. Explore the hidden frequencies!' },
           ]}
         />
 
         <Break
-          title="Risk Reduction: Try Product free for 14 days"
-          subtitle="This is an in-betwen CTA for visitors that already got convinced."
+          title="Maker. Hacker. Innovator."
           illustration=""
-          action="When is it ready?"
-          onActionClick={() => window.scrollTo({ top: 99999, behavior: 'smooth' })}
+          subtitle="Join me on a thrilling journey of creation!"
+          action="Explore Projects"
+          onActionClick={() => { /* Link to your project/portfolio page */ }}
         />
 
         <Highlights
-          title="Highlights of your product"
-          subtitle="Explain why your solution deserves attention"
+          title="Signature Creations"
+          subtitle="Here are some of my favorite projects!"
           highlights={[
-            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
-            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
-            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
+            { illustration: '', title: 'Project Aether', text: 'A 3D printed drone soaring the skies!' },
+            { illustration: '', title: 'OpenBeam', text: 'A modular open-source tech platform.' },
+            { illustration: '', title: 'RadioWave', text: 'A deep dive into the world of wireless communication.' },
           ]}
         />
 
         <Features
           background="alternate"
-          title="But wait, there is more"
-          subtitle="Describe the full extent of your product"
+          title="Tutorials & Guides"
+          subtitle='Learn the ropes of making with these step-by-step guides.'
           features={[
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
+            { illustration: '', title: '3D Printing 101', text: 'Step into the world of 3D printing with this beginner’s guide.' },
+            { illustration: '', title: 'Hack the Airwaves', text: 'Dive deep into radio frequencies and uncover hidden potentials.' },
+            { illustration: '', title: 'Open Tech Assemble!', text: 'The ultimate guide to open-source hardware projects.' },
           ]}
         />
 
         <Epilogue
-          title="Ask if your visitor wants to solve problem X today"
-          subtitle="Explain how your solution will solve this problem and ask them to start a free trial, or any other low-key CTA they could take"
+          title="Be Part of the Creation Revolution!"
+          subtitle="Hop on and let's craft, hack, and make wonders together!"
           illustration=""
-          subscribePlaceholder="you@email.com"
-          subscribeAction="When is it ready?"
+          subscribePlaceholder="Stay Updated. Drop your email!"
+          subscribeAction="Join the Tribe!"
         />
       </main>
 
       <Footer
-        title={"Global.product"}
+        title="AzideMakes | Ignite. Innovate. Inspire."
       />
     </div>
   )
