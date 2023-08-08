@@ -9,87 +9,70 @@ import Hero from '../blocks/Hero';
 import Highlights from '../blocks/Highlights';
 import Notice from '../components/Notice';
 
-const LOREM = `
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book.
-`;
-
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>{"Global.product"}</title>
+        <title>Alex Templeton - Application Performance Engineering Specialist</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Notice id="subscribed">Thank you for subscribing</Notice>
-      <Header id="top" title={"Global.product"} />
+      <Header id="top" title="Alex Templeton" />
 
       <main>
         <Hero
-          title="Clear headline that explains your product’s benefit"
-          subtitle="Explain your unique solution, how it solves your customer's problem."
-          illustration=""
-          subscribePlaceholder="you@email.com"
-          subscribeAction="When is it ready?"
+          title="Alex Templeton"
+          subtitle="Application Performance Engineering - Enterprise Holdings"
+          illustration="" // You can add a profile picture or related graphic here
         />
 
         <Benefits
           background="alternate"
-          title="Headline that describes how your product solves the problem"
-          subtitle="Start by defining the pain your customer has right now, for example: clients not paying their invoices. Then write how your solution solves this problem for your customers."
+          title="Certifications & Skills"
           benefits={[
-            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
-            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
-            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
+            { illustration: '', title: 'AWS Certified Solutions Architect', text: 'Certified in Oct 2018' },
+            { illustration: '', title: 'edX Verified Certificate', text: 'For Introduction to Computer Science and Programming Using Python in Mar 2015' },
+            { illustration: '', title: 'Key Skills', text: 'Terraform, Serverless, Amplify, AWS, API Development, Docker, Git, and more.' },
           ]}
         />
 
         <Break
-          title="Risk Reduction: Try Product free for 14 days"
-          subtitle="This is an in-betwen CTA for visitors that already got convinced."
-          illustration=""
-          action="When is it ready?"
-          onActionClick={() => window.scrollTo({ top: 99999, behavior: 'smooth' })}
+          title="Contact"
+          subtitle="alex@templeton.cloud | (650) 942-3527"
+          action="View LinkedIn Profile"
+          onActionClick={() => window.location.href = "https://linkedin.com/in/azide0x37"}
         />
 
         <Highlights
-          title="Highlights of your product"
-          subtitle="Explain why your solution deserves attention"
+          title="Key Projects & Initiatives"
           highlights={[
-            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
-            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
-            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
+            { illustration: '', title: 'Thursday Games', text: 'A NodeJS/NEXT.js Serverless Progressive Web App deployed on AWS from June 2022 to July 2022.' },
+            { illustration: '', title: 'GuardianAlgo', text: 'Algorithmic Volatility Trading using Quantopian API and Robinhood trade API from Dec 2016 to May 2017.' },
+            { illustration: '', title: 'Founder of Skylist Pro', text: 'A flight school, booking, rental, and tracking application leveraging modern technologies.' },
           ]}
         />
 
         <Features
           background="alternate"
-          title="But wait, there is more"
-          subtitle="Describe the full extent of your product"
+          title="Experience"
           features={[
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
+            { illustration: '', title: 'Enterprise Holdings', text: 'Application Performance Engineering from July 2021 - Present' },
+            { illustration: '', title: 'Refinitiv/London Stock Exchange Group', text: 'Lead DevOps SRE from Feb 2020 - June 2021' },
+            // ... Other experiences can be added similarly
           ]}
         />
 
         <Epilogue
-          title="Ask if your visitor wants to solve problem X today"
-          subtitle="Explain how your solution will solve this problem and ask them to start a free trial, or any other low-key CTA they could take"
+          title="Ready for a New Challenge"
+          subtitle="Experienced in modern technologies and always eager to embrace the next big thing in tech."
           illustration=""
-          subscribePlaceholder="you@email.com"
-          subscribeAction="When is it ready?"
+          subscribePlaceholder="Drop me a line"
+          subscribeAction="Contact Me"
         />
       </main>
 
       <Footer
-        title={"Global.product"}
+        title="Based in St. Louis, MO | Available for Remote Roles"
       />
     </div>
   )
