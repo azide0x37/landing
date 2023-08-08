@@ -9,87 +9,74 @@ import Hero from '../blocks/Hero';
 import Highlights from '../blocks/Highlights';
 import Notice from '../components/Notice';
 
-const LOREM = `
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book.
-`;
-
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>{"Global.product"}</title>
+        <title>Discover Shaw, St. Louis | Nemea</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Notice id="subscribed">Thank you for subscribing</Notice>
-      <Header id="top" title={"Global.product"} />
+      <Header id="top" title="Shaw Neighborhood, St. Louis" />
 
       <main>
         <Hero
-          title="Clear headline that explains your product’s benefit"
-          subtitle="Explain your unique solution, how it solves your customer's problem."
-          illustration=""
-          subscribePlaceholder="you@email.com"
-          subscribeAction="When is it ready?"
+          title="Welcome to Shaw"
+          subtitle="A Historical Jewel in the Heart of St. Louis"
+          illustration="" // Consider adding a panoramic shot of Shaw
         />
 
         <Benefits
           background="alternate"
-          title="Headline that describes how your product solves the problem"
-          subtitle="Start by defining the pain your customer has right now, for example: clients not paying their invoices. Then write how your solution solves this problem for your customers."
+          subtitle='A Neighborhood with a Story to Tell'
+          title="The Essence of Shaw"
           benefits={[
-            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
-            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
-            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
+            { illustration: '', title: 'Historical Charm', text: 'Stroll through time with our rich architecture and storied past.' },
+            { illustration: '', title: 'Community Spirit', text: 'Experience the vibrant culture and welcoming community.' },
+            { illustration: '', title: 'Modern Amenities', text: 'Enjoy the best of both worlds, with modern comforts in a historic setting.' },
           ]}
         />
 
         <Break
-          title="Risk Reduction: Try Product free for 14 days"
-          subtitle="This is an in-betwen CTA for visitors that already got convinced."
+          title="Nemea Companies"
+          subtitle="Your Partner in Shaw's Real Estate Journey"
           illustration=""
-          action="When is it ready?"
-          onActionClick={() => window.scrollTo({ top: 99999, behavior: 'smooth' })}
+          action="Explore Services"
+          onActionClick={() => { /* Link to your services page */ }}
         />
 
         <Highlights
-          title="Highlights of your product"
-          subtitle="Explain why your solution deserves attention"
+          title="Shaw At a Glance"
+          subtitle="A Neighborhood with a Story to Tell"
           highlights={[
-            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
-            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
-            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
+            { illustration: '', title: 'Botanical Gardens', text: 'A serene escape right in the neighborhood.' },
+            { illustration: '', title: 'Local Cafes & Eateries', text: 'Savor the flavors of Shaw’s diverse culinary scene.' },
+            { illustration: '', title: 'Community Events', text: 'Engage with local events, festivals, and gatherings.' },
           ]}
         />
 
         <Features
           background="alternate"
-          title="But wait, there is more"
-          subtitle="Describe the full extent of your product"
+          subtitle='A Neighborhood with a Story to Tell'
+          title="Nemea's Expertise"
           features={[
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
-            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
+            { illustration: '', title: 'Rental Services', text: 'Find your perfect home in the heart of Shaw.' },
+            { illustration: '', title: 'Property Management', text: 'Tailored solutions for property owners in the neighborhood.' },
+            { illustration: '', title: 'Real Estate Consultation', text: 'Navigate the Shaw real estate landscape with the best.' },
           ]}
         />
 
         <Epilogue
-          title="Ask if your visitor wants to solve problem X today"
-          subtitle="Explain how your solution will solve this problem and ask them to start a free trial, or any other low-key CTA they could take"
+          title="Be a Part of Shaw's Legacy"
+          subtitle="Reach out to learn more about living, investing, or just being part of our community."
           illustration=""
-          subscribePlaceholder="you@email.com"
-          subscribeAction="When is it ready?"
+          subscribePlaceholder="Stay Updated. Drop your email!"
+          subscribeAction="Join the Community!"
         />
       </main>
 
       <Footer
-        title={"Global.product"}
+        title="Shaw Neighborhood & Nemea | Building Communities Together"
       />
     </div>
   )
