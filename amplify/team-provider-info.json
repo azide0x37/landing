@@ -1,4 +1,17 @@
 {
+  "linette": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-landing-linette-05415-authRole",
+      "UnauthRoleArn": "arn:aws:iam::733224113635:role/amplify-landing-linette-05415-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::733224113635:role/amplify-landing-linette-05415-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-landing-linette-05415-deployment",
+      "UnauthRoleName": "amplify-landing-linette-05415-unauthRole",
+      "StackName": "amplify-landing-linette-05415",
+      "StackId": "arn:aws:cloudformation:us-east-1:733224113635:stack/amplify-landing-linette-05415/c422f140-b8c0-11ee-82cf-12ed166024e5",
+      "AmplifyAppId": "d2ffaenkdlsttv"
+    }
+  },
   "main": {
     "awscloudformation": {
       "AuthRoleName": "amplify-landing-main-151650-authRole",
