@@ -1,7 +1,7 @@
-import styles from './Hero.module.css';
 import Section from '../components/Section';
-import cx from '../utils/cx';
 import SubscribeInput from '../components/SubscribeInput';
+import cx from '../lib/utils/cx';
+import styles from './Hero.module.css';
 
 export default function Hero(p: {
   id?: string,
@@ -22,9 +22,9 @@ export default function Hero(p: {
       <div className={styles.header}>
         <h1 className={styles.title}>{p.title}</h1>
         <p className={styles.subtitle}>{p.subtitle}</p>
-        {p.subscribeAction && <SubscribeInput className={styles.subscribe} placeholder={p.subscribePlaceholder} action={p.subscribeAction}/>}
+        {p.subscribeAction && <SubscribeInput className={styles.subscribe} placeholder={p.subscribePlaceholder} action={p.subscribeAction} />}
       </div>
-      <div className={styles.illustration}/>
+      <div className={styles.illustration} />
     </Section>
   );
 }

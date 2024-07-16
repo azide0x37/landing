@@ -1,6 +1,6 @@
-import styles from './Footer.module.css';
 import Button from '../components/Button';
-import cx from '../utils/cx';
+import cx from '../lib/utils/cx';
+import styles from './Footer.module.css';
 
 export default function Footer(p: {
   id?: string,

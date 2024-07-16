@@ -1,5 +1,5 @@
+import cx from '../lib/utils/cx';
 import styles from './Button.module.css';
-import cx from '../utils/cx';
 
 export default function Button(p: {
   size?: 'large' | 'normal',

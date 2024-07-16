@@ -1,6 +1,6 @@
-import styles from './SubscribeInput.module.css';
+import cx from '../lib/utils/cx';
 import Button from './Button';
-import cx from '../utils/cx';
+import styles from './SubscribeInput.module.css';
 
 export default function SubscribeInput(p: {
   location?: 'body' | 'accent',
@@ -21,8 +21,8 @@ export default function SubscribeInput(p: {
   return (
     <form method="GET" action="/api/subscribe"> {/* Yes, GET */}
       <div className={className}>
-        <input className={styles.input} name="email" type="email" required placeholder={placeholder}/>
-        <input className={styles.pooh} name="b_3951c19vtqb9xa0we_9rv293" tabIndex={-1} defaultValue=""/>
+        <input className={styles.input} name="email" type="email" required placeholder={placeholder} />
+        <input className={styles.pooh} name="b_3951c19vtqb9xa0we_9rv293" tabIndex={-1} defaultValue="" />
         <Button className={styles.button} size="large">{action}</Button>
       </div>
     </form>

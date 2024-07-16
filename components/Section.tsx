@@ -1,5 +1,5 @@
+import cx from '../lib/utils/cx';
 import styles from './Section.module.css';
-import cx from '../utils/cx';
 
 export default function Section(p: {
   id?: string,

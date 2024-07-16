@@ -1,6 +1,6 @@
-import styles from './Header.module.css';
 import Button from '../components/Button';
-import cx from '../utils/cx';
+import cx from '../lib/utils/cx';
+import styles from './Header.module.css';
 
 export default function Header(p: {
   id?: string,
