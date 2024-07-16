@@ -29,6 +29,7 @@ export default function Home() {
         <Benefits
           background="alternate"
           title="Certifications & Skills"
+          subtitle="A few of the certifications I've earned and skills I've developed."
           benefits={[
             { illustration: '', title: 'AWS Certified Solutions Architect', text: 'Certified in Oct 2018' },
             { illustration: '', title: 'edX Verified Certificate', text: 'For Introduction to Computer Science and Programming Using Python in Mar 2015' },
@@ -39,12 +40,14 @@ export default function Home() {
         <Break
           title="Contact"
           subtitle="alex@templeton.cloud | (650) 942-3527"
+          illustration=""
           action="View LinkedIn Profile"
           onActionClick={() => window.location.href = "https://linkedin.com/in/azide0x37"}
         />
 
         <Highlights
           title="Key Projects & Initiatives"
+          subtitle="A few of the projects I've worked on over the years."
           highlights={[
             { illustration: '', title: 'Thursday Games', text: 'A NodeJS/NEXT.js Serverless Progressive Web App deployed on AWS from June 2022 to July 2022.' },
             { illustration: '', title: 'GuardianAlgo', text: 'Algorithmic Volatility Trading using Quantopian API and Robinhood trade API from Dec 2016 to May 2017.' },
@@ -55,6 +58,7 @@ export default function Home() {
         <Features
           background="alternate"
           title="Experience"
+          subtitle='Application Performance Engineering Specialist at Enterprise Holdings'
           features={[
             { illustration: '', title: 'Enterprise Holdings', text: 'Application Performance Engineering from July 2021 - Present' },
             { illustration: '', title: 'Refinitiv/London Stock Exchange Group', text: 'Lead DevOps SRE from Feb 2020 - June 2021' },
