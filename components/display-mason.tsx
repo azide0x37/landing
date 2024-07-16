@@ -63,7 +63,7 @@ export function DisplayMason() {
           <p className="mt-2 text-muted-foreground text-sm">Requires macOS Monterey (12.0) or newer.</p>
           <img src="/header-image.png" alt="App screenshot" className="shadow-inner mt-12 rounded w-full" />
         </section>
-        <section id="features" className="bg-gradient-to-b from-secondary/60 to-primary/70 shadow-inner px-6 py-20">
+        <section id="features" className="bg-gradient-to-b from-secondary/10 to-secondary/20 shadow-inner px-6 py-20">
           <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto max-w-5xl container">
             <div className="flex flex-col items-center gap-4">
               <DiscIcon className="w-12 h-12 text-secondary" />
@@ -111,7 +111,7 @@ export function DisplayMason() {
         </section>
         <section id="testimonials" className="px-6 py-20">
           <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-5xl container">
-            <div className="flex flex-col justify-between bg-gradient-to-b from-primary/40 to-secondary/10 shadow-md p-6 rounded h-full">
+            <div className="flex flex-col justify-between bg-gradient-to-b from-primary/40 to-primary/10 shadow-md p-6 rounded h-full">
               <blockquote className="font-medium text-lg">
                 "I use this app every day and it's cut down on so much frustration. Can't wait to share it with you all!"
               </blockquote>
